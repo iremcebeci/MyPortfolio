@@ -1,6 +1,6 @@
 ﻿namespace MyPortfolio.DAL.Entities
 {
-    public class Skills
+    public class Skill
     {
         public int SkillId { get; set; }
         public string Title { get; set; }
