@@ -1,266 +1,137 @@
-﻿<section id="works" class="s-works target-section">
+﻿<section id="projects" class="projects section">
+    <div class="container">
+        <h2 class="section-title">Projelerim</h2>
+        <div class="projects-filter" id="projectsFilter">
+            <!-- Filter buttons will be loaded dynamically -->
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-detail.html?id=1" target="_blank" class="project-link" title="Detayları Gör"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com" target="_blank" class="project-link" title="GitHub'da Gör"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-Ticaret Sitesi</h3>
+                    <p>Modern ve responsive bir e-ticaret platformu. React ve Node.js kullanılarak geliştirildi.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="row narrow section-intro has-bottom-sep">
-        <div class="col-full">
-            <h3>Portfolyo</h3>
-            <h1>See My Latest Projects.</h1>
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-detail.html?id=2" target="_blank" class="project-link" title="Detayları Gör"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com" target="_blank" class="project-link" title="GitHub'da Gör"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Blog Platformu</h3>
+                    <p>Kullanıcıların yazılarını paylaşabileceği modern bir blog sistemi.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-            <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-detail.html?id=3" target="_blank" class="project-link" title="Detayları Gör"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com" target="_blank" class="project-link" title="GitHub'da Gör"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Görev Yönetimi Uygulaması</h3>
+                    <p>Günlük görevlerinizi organize etmenize yardımcı olan mobil uygulama.</p>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 4">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-detail.html?id=4" target="_blank" class="project-link" title="Detayları Gör"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com" target="_blank" class="project-link" title="GitHub'da Gör"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Yapay Zeka Chatbot</h3>
+                    <p>Doğal dil işleme kullanan akıllı sohbet robotu.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 5">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-detail.html?id=5" target="_blank" class="project-link" title="Detayları Gör"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com" target="_blank" class="project-link" title="GitHub'da Gör"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Hava Durumu Uygulaması</h3>
+                    <p>Gerçek zamanlı hava durumu verilerini gösteren web uygulaması.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 6">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-detail.html?id=6" target="_blank" class="project-link" title="Detayları Gör"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com" target="_blank" class="project-link" title="GitHub'da Gör"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Veri Analizi Dashboard</h3>
+                    <p>İnteraktif veri görselleştirme ve analiz paneli.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Plotly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-load-more">
+            <button class="btn btn-primary" id="loadMoreProjects">Daha Fazla Yükle</button>
         </div>
     </div>
-
-    <div class="row masonry-wrap">
-        <div class="masonry">
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/beetle.jpg"
-                                 srcset="/hola-master/images/portfolio/beetle.jpg 1x, /hola-master/images/portfolio/beetle@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            The Beetle
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Development
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-lighthouse.jpg" class="thumb-link" title="Lighthouse" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/lighthouse.jpg"
-                                 srcset="/hola-master/images/portfolio/lighthouse.jpg 1x, /hola-master/images/portfolio/lighthouse@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Lighthouse
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Design
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-salad.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/salad.jpg"
-                                 srcset="/hola-master/images/portfolio/salad.jpg 1x, /hola-master/images/portfolio/salad@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Salad
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/woodcraft.jpg"
-                                 srcset="/hola-master/images/portfolio/woodcraft.jpg 1x, /hola-master/images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Woodcraft
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-skaterboy.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/skaterboy.jpg"
-                                 srcset="/hola-master/images/portfolio/skaterboy.jpg 1x, /hola-master/images/portfolio/skaterboy@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Skaterboy
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Development
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-liberty.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/liberty.jpg"
-                                 srcset="/hola-master/images/portfolio/liberty.jpg 1x, /hola-master/images/portfolio/liberty@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Liberty
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-minimalismo.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/minimalismo.jpg"
-                                 srcset="/hola-master/images/portfolio/minimalismo.jpg 1x, /hola-master/images/portfolio/minimalismo@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Minimalismo
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Design
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="~/hola-master/images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="~/hola-master/images/portfolio/shutterbug.jpg"
-                                 srcset="/hola-master/images/portfolio/shutterbug.jpg 1x, /hola-master/images/portfolio/shutterbug@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Lady Shutterbug
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-        </div>
-    </div> <!-- end masonry -->
-
-</section> 
+</section>

@@ -1,19 +1,30 @@
-﻿<header class="s-header">
-
-    <div class="header-logo">
-        <a class="site-logo" href="index.html"><img src="~/hola-master/images/logo.png" alt="Homepage"></a>
-    </div>
-
-    <nav class="header-nav-wrap">
-        <ul class="header-nav">
-            <li class="current"><a class="smoothscroll" href="#home" title="home">Anasayfa</a></li>
-            <li><a class="smoothscroll" href="#about" title="about">Hakkımda</a></li>
-            <li><a class="smoothscroll" href="#works" title="works">Projelerim</a></li>
-            <li><a class="smoothscroll" href="#blog" title="blog">Referanslarım</a></li>
-            <li><a class="smoothscroll" href="#contact" title="contact">İletişim</a></li>
+﻿<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav-brand">
+            <a href="#home">&lt;/Portfolio&gt;</a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+            <li><a href="#about" class="nav-link">Hakkımda</a></li>
+            <li><a href="#education" class="nav-link">Eğitim</a></li>
+            <li><a href="#experience" class="nav-link">Deneyim</a></li>
+            <li><a href="#skills" class="nav-link">Yetenekler</a></li>
+            <li><a href="#projects" class="nav-link">Projeler</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">İletişim</a></li>
         </ul>
-    </nav>
-
-    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-</header>
+        <div class="nav-right">
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="login.html" class="admin-link" title="Admin Paneli">
+                <i class="fas fa-user-shield"></i>
+            </a>
+        </div>
+    </div>
+</nav>
