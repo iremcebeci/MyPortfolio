@@ -10,6 +10,7 @@ namespace MyPortfolio.DAL.Context
             optionsBuilder.UseSqlServer(
                 "Server=localhost;Initial Catalog=MyPortfolioDb;Integrated Security=True;TrustServerCertificate=True;");
         }
+
         public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Experience> Experiences { get; set; }
