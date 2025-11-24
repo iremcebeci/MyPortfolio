@@ -1,16 +1,21 @@
-﻿<section id="home" class="hero">
+﻿@model List<MyPortfolio.DAL.Entities.Feature>
+<section id="home" class="hero">
     <div class="hero-background">
         <div class="code-animation"></div>
     </div>
     <div class="container hero-content">
         <div class="hero-text">
-            <h1 class="hero-title">
-                Merhaba, Ben <span class="gradient-text">Yazılım Geliştiriciyim</span>
-            </h1>
-            <p class="hero-subtitle">
-                <span class="typing-text">Kodlama tutkusuyla dolu bir öğrenciyim</span>
-                <span class="cursor">|</span>
-            </p>
+
+            @foreach(var item in Model)
+            {
+                <h1 class="hero-title">
+                    @item.Title <span class="gradient-text">@item.TitleGradient</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text">@item.Description</span>
+                    <span class="cursor">|</span>
+                </p>
+            }
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">Projelerimi Gör</a>
                 <a href="#contact" class="btn btn-secondary">İletişime Geç</a>

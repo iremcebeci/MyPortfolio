@@ -1,4 +1,5 @@
-﻿<section id="about" class="about section">
+﻿@model List<MyPortfolio.DAL.Entities.About>
+<section id="about" class="about section">
     <div class="container">
         <h2 class="section-title">Hakkımda</h2>
         <div class="about-content">
@@ -9,16 +10,17 @@
                 </div>
             </div>
             <div class="about-text">
-                <h3>Yazılım Tutkunu Bir Öğrenci</h3>
-                <p>
-                    Merhaba! Ben yazılım mühendisliği öğrencisiyim ve teknolojiye olan tutkum beni
-                    sürekli yeni şeyler öğrenmeye ve geliştirmeye itiyor. Web geliştirme,
-                    mobil uygulamalar ve yapay zeka alanlarında kendimi geliştiriyorum.
-                </p>
-                <p>
-                    Problem çözmeyi seven, takım çalışmasına yatkın ve sürekli öğrenmeye açık
-                    biriyim. Kodlama ile hayatı kolaylaştıran projeler geliştirmek en büyük hedefim.
-                </p>
+                @foreach (var item in Model)
+                {
+                    <h3>@item.Title</h3>
+                    <p>
+                        @item.SubDescription
+                    </p>
+                    <p>
+                        @item.Details
+                    </p>
+                }
+                
                 <div class="about-stats">
                     <div class="stat-item">
                         <h4>10+</h4>

@@ -34,6 +34,10 @@ namespace MyPortfolio.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("SubDescription")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -45,6 +49,47 @@ namespace MyPortfolio.Migrations
                     b.HasKey("AboutId");
 
                     b.ToTable("Abouts");
+                });
+
+            modelBuilder.Entity("MyPortfolio.DAL.Entities.Blog", b =>
+                {
+                    b.Property<int>("BlogId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BlogId"));
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DetailPageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReadingTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("BlogId");
+
+                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("MyPortfolio.DAL.Entities.Contact", b =>
@@ -88,6 +133,39 @@ namespace MyPortfolio.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("MyPortfolio.DAL.Entities.Education", b =>
+                {
+                    b.Property<int>("EducationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EducationId"));
+
+                    b.Property<string>("Date")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Head")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tag")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EducationId");
+
+                    b.ToTable("Educations");
+                });
+
             modelBuilder.Entity("MyPortfolio.DAL.Entities.Experience", b =>
                 {
                     b.Property<int>("ExperienceId")
@@ -105,6 +183,10 @@ namespace MyPortfolio.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Head")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tag")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -129,8 +211,13 @@ namespace MyPortfolio.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Title")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TitleGradient")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("FeatureId");
 
@@ -184,11 +271,19 @@ namespace MyPortfolio.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("DetailPageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GitHubUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SubTitle")
+                    b.Property<string>("Tag")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -212,6 +307,10 @@ namespace MyPortfolio.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillId"));
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -248,35 +347,6 @@ namespace MyPortfolio.Migrations
                     b.HasKey("SocialMediaId");
 
                     b.ToTable("SocialMedias");
-                });
-
-            modelBuilder.Entity("MyPortfolio.DAL.Entities.Testimonial", b =>
-                {
-                    b.Property<int>("TestimonialId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TestimonialId"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NameSurname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("TestimonialId");
-
-                    b.ToTable("Testimonials");
                 });
 #pragma warning restore 612, 618
         }
